@@ -1,0 +1,12 @@
+[package]
+name = "msm"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+ark-mnt4-298 = "0.4.0"
+ark-ec = "0.4.0"
+ark-ff = "0.4.0"
+ark-std = "0.4.0"
+rand = "0.8.5"
