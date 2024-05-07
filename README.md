@@ -19,7 +19,7 @@ Ensure that you have Cargo installed, as it will handle these dependencies autom
 ## Installation instructions
 
 1. Install Rust and Cargo using rustup.
-2. Clone the repository to your local machine: "git clone https://github.com/aaneelshalman/Multi-Scalar-Multiplication-on-MNT-Curves.git"
+2. Clone the repository to your local machine: "git clone https://github.com/19010755/Multi-Scalar-Multiplication-Algorithms-on-MNT-Curves"
 3. Navigate to the cloned repository's root directory.
 4. Run "cargo build --release" to compile the project.
 
