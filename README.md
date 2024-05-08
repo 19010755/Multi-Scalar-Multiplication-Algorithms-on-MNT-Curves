@@ -30,13 +30,13 @@ To run the main application and view the runtime outputs of the ten algorithm im
 1. Use the command "cargo run". This will execute the main.rs file, where the execution times of the algorithms are calculated and displayed.
 2. Within main.rs, you can modify the window_size variable to adjust the window size, and num_points to change the number of point-scalar pairs used in the calculations.
 3. The generate_scalar function includes a default maximum scalar value set to 4294967295, which is the maximum for a 32-bit unsigned integer. Feel free to adjust this value as needed to fit your testing requirements.
-4. To obtain runtimes for specific stages of the Pippenger bucket method or to assess the additional cost of signed integer decomposition, uncomment the relevant timing lines in pippenger.rs and sid_pippenger.rs. Look for lines similar to:
+4. To obtain runtimes for specific stages of the Pippenger bucket method or to assess the additional cost of signed integer decomposition, uncomment the relevant timing lines in pippenger.rs and sid_pippenger.rs. By extension, you may also add these timing lines to any algorithm file to get hold of how long a specific step takes. With variability in variable names, look for lines similar to:
 
 ```rust
-        use std::time::Instant;
-        let start_partitioning = Instant::now();
-        let duration_partitioning = start_partitioning.elapsed();
-        println!("Partitioning took: {:?}", duration_partitioning);
+        use std::time::Instant; // This library will need to be used
+        let start_partitioning = Instant::now(); // This will be at the start of the step you'd like to measure
+        let duration_partitioning = start_partitioning.elapsed(); // This will be at the end of the step you'd like to measure
+        println!("Partitioning took: {:?}", duration_partitioning); // Output when the command "cargo run" is executed
 ```
 
 ## Testing
