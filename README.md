@@ -34,9 +34,9 @@ To run the main application and view the runtime outputs of the ten algorithm im
 
 ```rust
         use std::time::Instant; // This library will need to be used
-        let start_partitioning = Instant::now(); // This will be at the start of the step you'd like to measure
-        let duration_partitioning = start_partitioning.elapsed(); // This will be at the end of the step you'd like to measure
-        println!("Partitioning took: {:?}", duration_partitioning); // Output when the command "cargo run" is executed
+        let start_partitioning = Instant::now(); // At the start of the step
+        let duration_partitioning = start_partitioning.elapsed(); // At the end of the step
+        println!("Partitioning took: {:?}", duration_partitioning); // Output upon "cargo run"
 ```
 
 ## Testing
