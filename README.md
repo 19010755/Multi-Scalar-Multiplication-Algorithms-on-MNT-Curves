@@ -44,4 +44,3 @@ To run the main application and view the runtime outputs of the ten algorithm im
 For testing of the algorithms:
 
 1. Run cargo test to execute the test suites for all implemented algorithms. This will verify the correctness of each algorithm and ensure they are functioning as expected.
-# Multi-Scalar-Multiplication-Algorithms-on-MNT-Curves
